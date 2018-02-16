@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.Map;
 
 @Data
@@ -12,8 +13,5 @@ import java.util.Map;
 @ToString
 public class Statistic implements Serializable {
 	private Boolean running;
-	private Long inputTraffic;
-	private Long outputTraffic;
-	private Map<Integer, Long> portTraffic;
-	private Map<Integer, Map<String, Integer>> socket;
+	private Map<Integer, Traffic> trafficMap = new HashMap<>();
 }

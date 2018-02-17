@@ -1,5 +1,7 @@
 package com.moekr.shadow.rpc.vo;
 
-public enum Action {
+import java.io.Serializable;
+
+public enum Action implements Serializable {
 	START, RESTART, STOP, NONE
 }

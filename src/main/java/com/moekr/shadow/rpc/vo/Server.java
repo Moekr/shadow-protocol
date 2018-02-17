@@ -4,11 +4,12 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Data
 @EqualsAndHashCode
 @ToString
-public class Server {
-	private String name;
+public class Server implements Serializable {
 	private Integer port;
 	private String password;
 	private String method;

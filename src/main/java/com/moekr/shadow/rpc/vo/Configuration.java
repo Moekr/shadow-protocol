@@ -14,5 +14,5 @@ import java.util.Set;
 public class Configuration implements Serializable {
 	private Action action;
 	private Set<Server> servers = new HashSet<>();
-	private Set<User> users = new HashSet<>();
+	private Set<VirtualServer> virtualServers = new HashSet<>();
 }

@@ -12,6 +12,6 @@ import java.util.Map;
 @EqualsAndHashCode
 @ToString
 public class Statistic implements Serializable {
-	private Boolean running;
+	private boolean running;
 	private Map<Integer, Traffic> trafficMap = new HashMap<>();
 }

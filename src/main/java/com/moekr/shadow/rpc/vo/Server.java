@@ -15,4 +15,5 @@ public class Server implements Serializable {
 	private String method;
 	private String protocol;
 	private String obfs;
+	private String obfsParam;
 }

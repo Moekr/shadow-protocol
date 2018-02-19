@@ -10,6 +10,6 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @ToString
 public class Traffic implements Serializable {
-	private Long download;
-	private Long upload;
+	private long download;
+	private long upload;
 }
